@@ -66,18 +66,11 @@ h1 {
   column-gap: 0.625rem;
   outline: none;
   cursor: pointer;
-  /* DESKTOP transition: 0.3s; */
 }
-
-/*  DEKSTOP
-.container button:hover {
-  opacity: 0.3;
-} */
 
 .container {
   background-color: var(--white);
-  width: 340px;
-  height: 600px;
+  max-width: 350px;
   text-align: left;
   border-radius: 0.625rem;
   overflow: hidden;
@@ -121,4 +114,42 @@ h1 {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 640px) {
+  h1 {
+    margin: 1rem 0 1rem;
+    line-height: 2rem;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+  }
+
+  .description {
+    line-height: 1.5rem;
+  }
+
+  .details {
+    padding: 2rem;
+  }
+
+  .priceinfo {
+    margin-bottom: 1.5rem;
+  }
+
+  .product-photo {
+    content: url(./images/image-product-desktop.jpg);
+    height: 100%;
+  }
+
+  .container button {
+    transition: 0.3s;
+  }
+
+  .container button:hover {
+    background-color: hsl(158, 36%, 20%);
+  }
 }
