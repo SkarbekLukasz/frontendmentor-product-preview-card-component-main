@@ -74,6 +74,7 @@ h1 {
   text-align: left;
   border-radius: 0.625rem;
   overflow: hidden;
+  margin-bottom: 1rem;
 }
 
 .details {
@@ -133,7 +134,7 @@ h1 {
   }
 
   .details {
-    padding: 2rem;
+    padding: 2rem 2rem 0.625rem;
   }
 
   .priceinfo {
